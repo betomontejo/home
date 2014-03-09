@@ -1,0 +1,7 @@
+[user]
+	name = Beto Montejo
+	email = 
+[core]
+	editor = vim
+[diff]
+	external = /usr/local/bin/git-diff.sh
