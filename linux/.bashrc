@@ -112,3 +112,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+export JAVA_HOME=/opt/java/jdk
+export PATH=$PATH:/opt/java/jdk/bin:/opt/java/groovy/bin:/opt/java/scala/bin:~/bin
