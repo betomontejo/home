@@ -1,0 +1,9 @@
+#!/bin/bash
+#Based on http://stackoverflow.com/a/1885202/1434089
+
+JIRA_PATTERN='^[A-Z]\{1,\}-[0-9]\{1,\}'
+
+test "" != "$(grep $JIRA_PATTERN "$1")" || {
+        echo >&2 "ERROR: Commit message is missing Jira issue number."
+        exit 1
+}
